@@ -1,0 +1,77 @@
+/* --- CSS addTheater.html only --- */
+* { padding:0; margin:0; }
+
+.container {
+    width:100vw;
+    height:auto;
+    padding-top:105px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background-color: black;
+}
+
+.sec {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.sec .mid_wrap {
+    width: 800px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 26, 26);
+    border-radius: 60px;
+}
+
+.sec .tbtitle {
+    width: 600px;
+    margin-bottom: 50px;
+}
+
+.sec .tbtitle span {
+    font-size:30px;
+    font-weight: bold;
+}
+
+.sec .addwrap {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec .addwrap input {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 10px;
+}
+
+.sec .addwrap .acc_btn button {
+    width: 130px;
+    height: 40px;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 60px;
+    margin-right: 10px;
+    background-color: rgb(37, 37, 37);
+    font-size: 17px;
+    color: rgb(225, 235, 140);
+    cursor: pointer;
+}
+
+th, td {
+    padding: 15px;
+    font-size: 20px;
+}

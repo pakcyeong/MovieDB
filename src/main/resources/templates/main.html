@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html leng="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movilog - All of Movies | Theaters in Korea</title>
+    <!-- link CSS only -->
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS Style -->
+    <style>
+        :root {
+            --background-color:rgb(0, 0, 0);
+            --nav-bar-color:rgba(0, 0, 0, 0.342);
+            --webfont-color:rgb(211, 211, 211);
+            --wf-hover-color: rgb(255, 255, 255);
+        }
+        body {
+            overflow-x: hidden;
+        }
+        .wrap {
+            min-width:870px;
+            width:100vw;
+            height:auto;
+            font-family: 'Noto Sans KR', sans-serif;
+            color:var(--webfont-color);
+            background-color: var(--background-color);
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="header" role="navigation">
+        <div class="headwp">
+            <div class="navi" role="nav_inner">
+                <ul class="list_nav">
+                    <li class="logo"><a href="/" style="font-weight:600;">MOVILOG</a></li>
+                    <li class="nav_content"><a href="/movies"><i class="uil uil-video"></i>영화별</a></li>
+                </ul>
+                <div class="find">
+                    <input type="text" placeholder="Search..." onclick="location.href='/movies/search'"><i class="uil uil-search"></i>
+                </div>
+            </div>
+        </div>
+        <div class="galarywp">
+            <div class="gal_box">
+                <span>
+                    영화 정보 검색 사이트,
+                    <span style="font-weight:1000"> 무비로그 입니다. <br> </span>
+                    우측 상단의 검색창에 원하는 영화 제목을 검색해주세요.
+                </span>
+            </div>
+            <div class="galary">
+                <img src="/images/gal01.jpg" class="gal active">
+            </div>
+        </div>
+    </div>
+    <div class="container" role="main">
+        <section class="sec_itm">
+            <hr>
+            <span>영화 DB 테이블</span>
+            <div class="tsfwrap">
+                <div class="tsf">
+                    <table class="movieTable">
+                        <tr>
+                            <th>nID</th> <td>인덱스 번호</td>
+                        </tr>
+                        <tr>
+                            <th>name</th> <td>영화명</td>
+                        </tr>
+                        <tr>
+                            <th>dname</th> <td>감독명</td>
+                        </tr>
+                        <tr>
+                            <th>actor</th> <td>배우명</td>
+                        </tr>
+                        <tr>
+                            <th>rdate</th> <td>개봉일</td>
+                        </tr>
+                        <tr>
+                            <th>genre</th> <td>장르</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <hr class="hr_1">
+        </section>
+    </div>
+    <div class="footer" role="info">
+        <section class="foo foo01">
+            <i class="uil uil-database"></i>
+            <span class="title">DB</span>
+            <span class="desc">Created by<br>Maria DB, IntelliJ</span>
+        </section>
+        <section class="foo foo02">
+            <i class="uil uil-brush-alt"></i>
+            <span class="title">Design</span>
+            <span class="desc">Designed by<br>Vanilla HTML5, CSS</span>
+        </section>
+        <section class="foo foo03">
+            <i class="uil uil-brackets-curly"></i>
+            <span class="title">Idea</span>
+            <span class="desc">Copyright by<br>Team us</span>
+        </section>
+    </div>
+</div>
+</body>
+</html>

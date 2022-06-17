@@ -1,0 +1,44 @@
+/* --- CSS footer.html only --- */
+* { padding:0; margin:0; }
+
+.footer {
+    width:100vw;
+    height:300px;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    background-color: #1D1D1F;
+}
+
+.footer i {
+    font-size: 60px;
+    color: #F5F5F7;
+    margin-bottom: 20px;
+}
+
+.footer .foo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    color: #F5F5F7;
+}
+
+.footer .foo .title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer .foo .desc {
+    text-align: center;
+    font-size: 13px;
+}
+
+.foo01, .foo02 {
+    margin-right: 50px;
+}

@@ -1,0 +1,72 @@
+/* --- CSS index.html only --- */
+* { padding:0; margin:0; }
+
+.container {
+    width:100vw;
+    height:auto;
+    padding-top:105px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.sec_itm {
+    height: auto;
+    width: 60%;
+}
+
+.sec_itm hr {
+    border: 1px solid rgb(202, 202, 202);
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.sec_itm span {
+    padding-left: 55px;
+    font-size:30px;
+    font-weight: bold;
+}
+
+.tsfwrap {
+    height:50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tsf {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tsf table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th:nth-child(1){
+    width: 50%;
+}
+
+th:nth-child(2){
+    width: 50%;
+}
+
+th,td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    font-size: 20px;
+}
+
+td {
+    font-size: 18px;
+}

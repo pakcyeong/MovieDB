@@ -1,0 +1,68 @@
+/* --- CSS movies.html only --- */
+* { padding:0; margin:0; }
+
+.container {
+    width:100vw;
+    height:auto;
+    padding-top:105px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background-color: black;
+    /* padding-bottom: 20px; */
+}
+.opt_wrap {
+    padding-top: 10px;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+hr {
+    width: 70%;
+    border: 1px solid rgb(202, 202, 202);
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.opt_wrap button {
+    width: 130px;
+    height: 50px;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 60px;
+    margin-right: 10px;
+    background-color: rgb(77, 77, 77);
+    font-size: 17px;
+    font-weight: 800;
+    color: rgb(225, 235, 140);
+    cursor: pointer;
+}
+
+.sec {
+    width: 100vw;
+    height: 100vh;
+    /* padding-top:110px;  */
+    display: flex;
+    justify-content: center;
+}
+
+.sec .tbwrap table {
+    width: 1100px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.sec .tbwrap table th:nth-child(1) { width: 5%; }
+.sec .tbwrap table th:nth-child(2) { width: 40%; }
+.sec .tbwrap table td:nth-child(2) { text-align: left; padding-left: 10px;}
+.sec .tbwrap table th:nth-child(4) { width: 10%; }
+.sec .tbwrap table th:nth-child(3) { width: 25%; }
+.sec .tbwrap table th:nth-child(5) { width: 10%; }
+.sec .tbwrap table th:nth-child(6) { width: 10%; }
+
+th, td {
+    padding: 15px;
+    font-size: 18px;
+}

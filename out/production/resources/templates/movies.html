@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html leng="kr"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movilog - All of Movies | Theaters in Korea</title>
+    <!-- link CSS only -->
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/movie.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS Style -->
+    <style>
+        :root {
+            --background-color:rgb(0, 0, 0);
+            --nav-bar-color:rgba(0, 0, 0, 0.342);
+            --webfont-color:rgb(211, 211, 211);
+            --wf-hover-color: rgb(255, 255, 255);
+        }
+        body {
+            overflow-x: hidden;
+        }
+        .wrap {
+            min-width:870px;
+            width:100vw;
+            height:auto;
+            font-family: 'Noto Sans KR', sans-serif;
+            color:var(--webfont-color);
+            background-color: var(--background-color);
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="header" role="navigation">
+        <div class="headwp">
+            <div class="navi" role="nav_inner">
+                <ul class="list_nav">
+                    <li class="logo"><a href="/" style="font-weight:600;">MOVILOG</a></li>
+                    <li class="nav_content"><a href="/movies"><i class="uil uil-video"></i>영화별</a></li>
+                </ul>
+                <div class="find">
+                        <input type="text" placeholder="Search..." onclick="location.href='/movies/search'"><i class="uil uil-search"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" role="main">
+        <div class="opt_wrap">
+            <div class="opt">
+            </div>
+            <div class="othr">
+                <button class="add" onclick="location.href='/movies/create'">추가</button>
+            </div>
+        </div>
+        <hr>
+        <section class="sec">
+            <div class="tbwrap">
+                <table>
+                    <tr>
+                        <th>nID</th><th>name</th><th>actor</th><th>dname</th><th>rdate</th><th>genre</th>
+                    </tr>
+                    <tr th:each="movie: ${movies}">
+                        <td th:text="${movie.nid}"></td><td th:text="${movie.name}"><td th:text="${movie.actor}"></td><td th:text="${movie.dname}"></td><td th:text="${movie.rdate}"></td><td th:text="${movie.genre}"></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </div>
+    <div class="footer" role="info">
+        <section class="foo foo01">
+            <i class="uil uil-database"></i>
+            <span class="title">DB</span>
+            <span class="desc">Created by Maria DB, IntelliJ</span>
+        </section>
+        <section class="foo foo02">
+            <i class="uil uil-brush-alt"></i>
+            <span class="title">Design</span>
+            <span class="desc">Designed by Vanilla HTML5, CSS</span>
+        </section>
+        <section class="foo foo03">
+            <i class="uil uil-brackets-curly"></i>
+            <span class="title">Idea</span>
+            <span class="desc">Copyright Team us</span>
+        </section>
+    </div>
+</div>
+</body>
+</html>
